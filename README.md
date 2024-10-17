@@ -3,10 +3,9 @@
 
 <a href='https://rf-inversion.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 <a href='https://arxiv.org/pdf/2410.10792'><img src='https://img.shields.io/badge/ArXiv-Preprint-red'></a>
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-Demo-blue)](https://github.com/logtd/ComfyUI-Fluxtapoz)
+[![GitHub](https://img.shields.io/github/stars/LituRout/RF-Inversion?style=social)](https://github.com/LituRout/RF-Inversion)
 </div>
-
-
-<!-- **[Code will be released here...]**   -->
 
 
 Rectified flows for image inversion and editing. Our approach efficiently inverts reference style images in (a) and (b) without requiring text descriptions of the images and applies desired edits based on new prompts (e.g. “a girl” or “a dwarf”). For a reference content image (e.g. a cat in (c) or a face in (d)), it performs semantic image editing  e.g. “ sleeping cat”) and stylization (e.g. “a photo of a cat in origmai style”) based on prompts, without leaking unwanted content from the reference image (input images have orange borders).
@@ -16,7 +15,11 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 ## 🔥 Updates
 - **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
+- **[2024.10.15]** [Code](https://github.com/logtd/ComfyUI-Fluxtapoz) reimplemented by open-source ComfyUI community, thanks [logtd](https://github.com/logtd)!
 
+## 🚀 Comfy interface!
+Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https://img.shields.io/github/stars/comfyanonymous/ComfyUI'></a> for better experience:
+[ComfyUI Node](https://github.com/logtd/ComfyUI-Fluxtapoz)🔥
 
 ## Citation
 
