@@ -14,10 +14,11 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 
 ## 🔥 Updates
-- **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
 - **[2024.10.15]** [Code](https://github.com/logtd/ComfyUI-Fluxtapoz) reimplemented by open-source ComfyUI community, thanks [logtd](https://github.com/logtd)!
+- **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
 
-## 🚀 Comfy interface!
+
+## 🚀 Comfy User Interface
 Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https://img.shields.io/github/stars/comfyanonymous/ComfyUI'></a> for better experience:
 [ComfyUI Node](https://github.com/logtd/ComfyUI-Fluxtapoz)🔥
 
