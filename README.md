@@ -24,8 +24,8 @@ Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https:
 
 ```
 # Install [ComfyUI](https://comfyanonymous.github.io/ComfyUI_examples/flux/) to run flux
-1. cd ComfyUI
-2. python main.py
+1. > cd ComfyUI
+2. > python main.py
 
 # Install [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager). 
 1. > cd ComfyUI/custom_nodes
