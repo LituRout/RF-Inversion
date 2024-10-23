@@ -20,20 +20,19 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 ## 🚀 Comfy User Interface
 Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https://img.shields.io/github/stars/comfyanonymous/ComfyUI'></a> for better experience:
-[ComfyUI Node](https://github.com/logtd/ComfyUI-Fluxtapoz)🔥
+[ComfyUI Node](https://github.com/logtd/ComfyUI-Fluxtapoz)🔥. Follow the guidelines below to setup locally.
 
-```
-# Install [ComfyUI](https://comfyanonymous.github.io/ComfyUI_examples/flux/) to run flux
+### Install [ComfyUI](https://comfyanonymous.github.io/ComfyUI_examples/flux/) to run flux
 1. > cd ComfyUI
 2. > python main.py
 
-# Install [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager). 
+### Install [ComfyUI-Manager](https://github.com/ltdrdata/ComfyUI-Manager). 
 1. > cd ComfyUI/custom_nodes
 2. > git clone https://github.com/ltdrdata/ComfyUI-Manager.git
 3. > cd ..
 4. > python main.py
 
-# Install [RF-Inversion](https://rf-inversion.github.io/) ComfyUI [Node](https://github.com/logtd/ComfyUI-Fluxtapoz)
+### Install [RF-Inversion](https://rf-inversion.github.io/) ComfyUI [Node](https://github.com/logtd/ComfyUI-Fluxtapoz)
 1. Click on "Manager"
 2. Install via Git URL: [https://github.com/logtd/ComfyUI-Fluxtapoz](https://github.com/logtd/ComfyUI-Fluxtapoz)
 3. If you see error, change security level in ComfyUI/custom_nodes/ComfyUI-Manager/config.ini from "normal" to "weak"
@@ -42,7 +41,7 @@ Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https:
 6. Copy RF-Inversion [workflow](https://github.com/logtd/ComfyUI-Fluxtapoz/blob/main/example_workflows/example_rf_inversion_updated.json) and paste on the ComfyUI window.
 7. Click on "Queue Prompt" to see the result
 8. Tune hyper-parameters (such as eta, start_step, stop_step) to get the desired outcome.
-```
+
 ## Citation
 
 ```
