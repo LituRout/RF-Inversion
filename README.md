@@ -39,8 +39,9 @@ Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https:
 4. > cd ComfyUI
 5. > python main.py
 6. Copy RF-Inversion [workflow](https://github.com/logtd/ComfyUI-Fluxtapoz/blob/main/example_workflows/example_rf_inversion_updated.json) and paste on the ComfyUI window.
-7. Click on "Queue Prompt" to see the result
-8. Tune hyper-parameters (such as eta, start_step, stop_step) to get the desired outcome.
+7. Install missing custom nodes in Manager
+8. Click on "Queue Prompt" to see the result
+9. Tune hyper-parameters (such as eta, start_step, stop_step) to get the desired outcome
 
 ## Citation
 
