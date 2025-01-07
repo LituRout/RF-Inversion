@@ -4,6 +4,7 @@
 <a href='https://rf-inversion.github.io/'><img src='https://img.shields.io/badge/Project-Page-green'></a>
 <a href='https://arxiv.org/pdf/2410.10792'><img src='https://img.shields.io/badge/ArXiv-Preprint-red'></a>
 [![ComfyUI](https://img.shields.io/badge/ComfyUI-Demo-blue)](https://github.com/logtd/ComfyUI-Fluxtapoz)
+[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-red)](https://huggingface.co/spaces/rf-inversion/RF-inversion)
 [![GitHub](https://img.shields.io/github/stars/LituRout/RF-Inversion?style=social)](https://github.com/LituRout/RF-Inversion)
 </div>
 
