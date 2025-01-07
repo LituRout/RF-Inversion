@@ -14,13 +14,17 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 
 ## 🔥 Updates
+- **[2024.12.23]** [RF-Inversion](https://huggingface.co/spaces/rf-inversion/RF-inversion) gradio demo, thanks [Linoy](https://github.com/linoytsaban)!
 - **[2024.12.17]** [RF-Inversion](https://github.com/huggingface/diffusers/pull/9816) now supported in diffusers, thanks [Linoy](https://github.com/linoytsaban)!
 - **[2024.10.15]** [Code](https://github.com/logtd/ComfyUI-Fluxtapoz) reimplemented by open-source ComfyUI community, thanks [logtd](https://github.com/logtd)!
 - **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
 
+## 🤗 Gradio interface
+We support a Gradio <a href='https://github.com/gradio-app/gradio'><img src='https://img.shields.io/github/stars/gradio-app/gradio'></a> demo for better user experience:
+[Web demonstration](https://huggingface.co/spaces/rf-inversion/RF-inversion)🔥
 
 ## 🚀 Diffusers Implementation
-Try [RF-Inversion](https://github.com/huggingface/diffusers/pull/9816) using diffusers implementation! Load hyper Flux LoRA to enable 8 step inversion and editing. Thanks @linoytsaban
+Try [RF-Inversion](https://github.com/huggingface/diffusers/pull/9816) using diffusers implementation! Load hyper Flux LoRA to enable 8 step inversion and editing🔥
 
 ### Imports
 ```
