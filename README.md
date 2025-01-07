@@ -20,8 +20,10 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 
 ## 🚀 Diffusers Implementation
+Try [RF-Inversion](https://github.com/huggingface/diffusers/pull/9816) using diffusers implementation! Load hyper Flux LoRA to enable 8 step inversion and editing. Thanks @linoytsaban
+
+### Imports
 ```
-## Imports
 import torch
 from diffusers import FluxPipeline
 import requests
@@ -29,30 +31,38 @@ import PIL
 from io import BytesIO
 import os
 # torch.manual_seed(999)
+```
 
-## Load RF-Inversion pipeline
+### Load RF-Inversion pipeline
+```
 pipe = FluxPipeline.from_pretrained(
     "black-forest-labs/FLUX.1-dev",
     torch_dtype=torch.bfloat16,
     custom_pipeline="pipeline_flux_rf_inversion")
 pipe.to("cuda")
+```
 
-## Load image
+### Load image
+```
 def download_image(url):
     response = requests.get(url)
     return PIL.Image.open(BytesIO(response.content)).convert("RGB")
 
 img_url = "https://www.aiml.informatik.tu-darmstadt.de/people/mbrack/tennis.jpg"
 image = download_image(img_url)
+```
 
-## Perform inversion
+### Perform inversion
+```
 inverted_latents, image_latents, latent_image_ids = pipe.invert(
     image=image, 
     num_inversion_steps=28, 
     gamma=0.5
   )
+```
 
-## Perform editing
+### Perform editing
+```
 edited_image = pipe(
     prompt="a tomato",
     inverted_latents=inverted_latents,
@@ -63,8 +73,10 @@ edited_image = pipe(
     num_inference_steps=28,
     eta=0.9,    
   ).images[0]
+```
 
-## Save result
+### Save result
+```
 save_dir = "./results/"
 if not os.path.exists(save_dir):
     os.makedirs(save_dir)
@@ -112,7 +124,7 @@ Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https:
 
 <!-- ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=LituRout/RB-Modulation&type=Date)](https://star-history.com/#LituRout/RB-Modulation&Date) -->
+[![Star History Chart](https://api.star-history.com/svg?repos=LituRout/RF-Inversion&type=Date)](https://star-history.com/#LituRout/RF-Inversion&Date) -->
 
 ## Licenses
 
