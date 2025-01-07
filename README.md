@@ -20,7 +20,7 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 - **[2024.10.15]** [Code](https://github.com/logtd/ComfyUI-Fluxtapoz) reimplemented by open-source ComfyUI community, thanks [logtd](https://github.com/logtd)!
 - **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
 
-## 🤗 Gradio interface
+## 🤗 Gradio Interface
 We support a Gradio <a href='https://github.com/gradio-app/gradio'><img src='https://img.shields.io/github/stars/gradio-app/gradio'></a> demo for better user experience:
 [Web demonstration](https://huggingface.co/spaces/rf-inversion/RF-inversion)🔥
 
