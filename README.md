@@ -14,8 +14,64 @@ Rectified flows for image inversion and editing. Our approach efficiently invert
 
 
 ## 🔥 Updates
+- **[2024.12.17]** [RF-Inversion](https://github.com/huggingface/diffusers/pull/9816) now supported in diffusers, thanks [Linoy](https://github.com/linoytsaban)!
 - **[2024.10.15]** [Code](https://github.com/logtd/ComfyUI-Fluxtapoz) reimplemented by open-source ComfyUI community, thanks [logtd](https://github.com/logtd)!
 - **[2024.10.14]** [Paper](https://arxiv.org/pdf/2410.10792) is published on arXiv!
+
+
+## 🚀 Diffusers Implementation
+```
+## Imports
+import torch
+from diffusers import FluxPipeline
+import requests
+import PIL
+from io import BytesIO
+import os
+# torch.manual_seed(999)
+
+## Load RF-Inversion pipeline
+pipe = FluxPipeline.from_pretrained(
+    "black-forest-labs/FLUX.1-dev",
+    torch_dtype=torch.bfloat16,
+    custom_pipeline="pipeline_flux_rf_inversion")
+pipe.to("cuda")
+
+## Load image
+def download_image(url):
+    response = requests.get(url)
+    return PIL.Image.open(BytesIO(response.content)).convert("RGB")
+
+img_url = "https://www.aiml.informatik.tu-darmstadt.de/people/mbrack/tennis.jpg"
+image = download_image(img_url)
+
+## Perform inversion
+inverted_latents, image_latents, latent_image_ids = pipe.invert(
+    image=image, 
+    num_inversion_steps=28, 
+    gamma=0.5
+  )
+
+## Perform editing
+edited_image = pipe(
+    prompt="a tomato",
+    inverted_latents=inverted_latents,
+    image_latents=image_latents,
+    latent_image_ids=latent_image_ids,
+    start_timestep=0,
+    stop_timestep=7/28,
+    num_inference_steps=28,
+    eta=0.9,    
+  ).images[0]
+
+## Save result
+save_dir = "./results/"
+if not os.path.exists(save_dir):
+    os.makedirs(save_dir)
+image_save_path = os.path.join(save_dir, f"rf_inversion.png")
+edited_image.save(image_save_path)
+print('Results saved here: ', image_save_path)
+```
 
 
 ## 🚀 Comfy User Interface
