@@ -45,6 +45,10 @@ pipe = FluxPipeline.from_pretrained(
     torch_dtype=torch.bfloat16,
     custom_pipeline="pipeline_flux_rf_inversion")
 pipe.to("cuda")
+
+# The above class uses ODE sampling. To enable SDE sampling, clone this repo and add the following line:
+from pipeline_rf_inversion_sde import RFInversionFluxPipelineSDE
+pipe = RFInversionFluxPipelineSDE.from_pipe(pipe) 
 ```
 
 ### Load image
