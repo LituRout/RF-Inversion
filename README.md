@@ -123,11 +123,13 @@ Try ComfyUI <a href='https://github.com/comfyanonymous/ComfyUI'><img src='https:
 ## Citation
 
 ```
-@article{rout2024rfinversion,
-  title={Semantic Image Inversion and Editing using Rectified Stochastic Differential Equations},
-  author={Litu Rout and Yujia Chen and Nataniel Ruiz and Constantine Caramanis and Sanjay Shakkottai and Wen-Sheng Chu},
-  journal={arXiv preprint arXiv:2410.10792},
-  year={2024}
+@inproceedings{
+rout2025semantic,
+title={Semantic Image Inversion and Editing using Rectified Stochastic Differential Equations},
+author={Litu Rout and Yujia Chen and Nataniel Ruiz and Constantine Caramanis and Sanjay Shakkottai and Wen-Sheng Chu},
+booktitle={The Thirteenth International Conference on Learning Representations},
+year={2025},
+url={https://openreview.net/forum?id=Hu0FSOSEyS}
 }
 ```
 
